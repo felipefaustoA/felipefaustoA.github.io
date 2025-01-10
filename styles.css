@@ -166,7 +166,8 @@ main {
 
 .card img {
     width: 100%;
-    height: 60%;
+    height: auto; /* Mantém a proporção da imagem */
+    max-height: 300px; /* Limita a altura máxima da imagem */
     object-fit: cover;
     object-position: center;
 }
@@ -174,7 +175,7 @@ main {
 .card-content {
     padding: 20px;
     color: white;
-    flex-grow: 1;
+    flex-grow: 1; /* Permite que o conteúdo ocupe o espaço disponível */
 }
 
 .card-title {
